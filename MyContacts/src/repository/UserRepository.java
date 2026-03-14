@@ -6,7 +6,7 @@ import user.*;
 public class UserRepository 
 {
 	static Map<String,User> byName=new HashMap<>();
-	static Map<Integer,User> byId=new HashMap<>();
+	static Map<String,User> byEmail=new HashMap<>();
 
 	public static void addUser(User u)
 	{
@@ -17,7 +17,7 @@ public class UserRepository
 		else
 		{
 			byName.put(u.getUsername(), u);
-			byId.put(u.getId(), u);
+			byEmail.put(u.getEmail(), u);
 		}
 	}
 	public static User getUserByName(String name)
@@ -32,16 +32,16 @@ public class UserRepository
 			return byName.get(name);
 		}
 	}
-	public static User getUserByID(int id)
+	public static User getUserByEmail(String email)
 	{
-		if(!byId.containsKey(id))
+		if(!byEmail.containsKey(email))
 		{
 			System.out.println("Invalid User Credentials");
 			return null;
 		}
 		else
 		{
-			return byId.get(id);
+			return byEmail.get(email);
 		}
 	}
 	public void printAllUsers()

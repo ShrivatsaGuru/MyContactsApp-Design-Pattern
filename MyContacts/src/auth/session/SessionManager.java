@@ -1,8 +1,8 @@
-package session;
+package com.seveneleven.mycontactapp.auth.session;
 
 import java.util.Optional;
 
-import user.*;
+import com.seveneleven.mycontactapp.user.model.User;
 
 public class SessionManager {
 	

@@ -72,7 +72,7 @@ import com.seveneleven.mycontactapp.user.validation.WeakPasswordException;
 /**
  * Main class that serves as the entry point to the my contacts application.
  * 
- * @author rsin3607
+ * @author Shrivatsa Guru
  * @version 12.0
  */
 public class MyContactsApp {
